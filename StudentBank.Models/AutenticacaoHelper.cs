@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentBank.Models
 {
-    internal class AutenticacaoHelper
+    class AutenticacaoHelper
     {
         public bool CompararSenhas(string senhaVerdadeira, string senhaTentativa)
         {
