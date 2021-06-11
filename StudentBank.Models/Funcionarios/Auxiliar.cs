@@ -17,7 +17,7 @@ namespace StudentBank.Models.Funcionarios
             Salario *= 1.1;
         }
 
-        internal protected override double GetBonificacao()
+        protected internal override double GetBonificacao()
         {
             return Salario * 0.2;
         }

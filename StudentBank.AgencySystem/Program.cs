@@ -14,8 +14,7 @@ namespace StudentBank.AgencySystem
         {
             ContaCorrente conta = new ContaCorrente(487, 789456);
             Funcionario funcionario = null;
-
-            AutenticacaoHelper teste;
+           
             Console.WriteLine(conta.Numero);
 
             Console.ReadLine();
