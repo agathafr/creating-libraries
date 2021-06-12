@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace StudentBank.Models
 {
+    /// <summary>
+    /// Define uma Conta Corrente do banco StudentBank.
+    /// </summary>
+    
     public class ContaCorrente
     {
         private static int TaxaOperacao;
