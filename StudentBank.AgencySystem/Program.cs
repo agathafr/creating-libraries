@@ -15,7 +15,6 @@ namespace StudentBank.AgencySystem
             ContaCorrente conta = new ContaCorrente(487, 789456);
             Funcionario funcionario = null;
 
-            new ContaCorrente(123, 654654);
             Console.WriteLine(conta.Numero);
 
             Console.ReadLine();
