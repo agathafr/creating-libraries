@@ -42,6 +42,11 @@ namespace StudentBank.Models
             }
         }
 
+        /// <summary>
+        /// Cria uma instância de ContaCorrente com os argumentos utilizados.
+        /// </summary>
+        /// <param name="agencia"> Representa o valor da propriedade <see cref="Agencia"/> e deve possuir um valor maior que zero. </param>
+        /// <param name="numero"> Representa o valor da propriedade <see cref="Número"/> e deve possuir um valor maior que zero.</param>
         public ContaCorrente(int agencia, int numero)
         {
             if (numero <= 0)
