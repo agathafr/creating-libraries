@@ -12,12 +12,33 @@ namespace StudentBank.AgencySystem
     {
         static void Main(string[] args)
         {
-            ContaCorrente conta = new ContaCorrente(487, 789456);
-            Funcionario funcionario = null;
+            DateTime dataFimPagamento = new DateTime(2021, 8, 15);
+            DateTime dataCorrente = DateTime.Now;
 
-            Console.WriteLine(conta.Numero);
+            TimeSpan diferenca = dataFimPagamento - dataCorrente;
 
+            string mensagem = "Vencimento em " + GetIntervaloDeTempoLegivel(diferenca);
+            Console.WriteLine(mensagem);
+            
             Console.ReadLine();
+        }
+
+        static string GetIntervaloDeTempoLegivel(TimeSpan timeSpan)
+        {
+            if (timeSpan.Days > 30)
+            {
+                int quantidadeMeses = timeSpan.Days / 30;
+                if (quantidadeMeses == 1)
+                {
+                    return "1 mês";
+                }
+                return quantidadeMeses + " meses";
+            }
+            else if (timeSpan.Days > 7)
+            {
+                int quantidadeSemanas = timeSpan.Days / 7;
+            }
+            return timeSpan.Days + " dias";
         }
     }
 }
